@@ -109,37 +109,69 @@ class CovidToday {
     );
 
     Map<String, dynamic> toJson() => {
+        // ignore: unnecessary_null_comparison
         "updated": updated == null ? null : updated,
+        // ignore: unnecessary_null_comparison
         "country": country == null ? null : country,
+        // ignore: unnecessary_null_comparison
         "cases": cases == null ? null : cases,
+        // ignore: unnecessary_null_comparison
         "todayCases": todayCases == null ? null : todayCases,
+        // ignore: unnecessary_null_comparison
         "deaths": covidTodayDeaths == null ? null : covidTodayDeaths,
+        // ignore: unnecessary_null_comparison
         "todayDeaths": todayDeaths == null ? null : todayDeaths,
+        // ignore: unnecessary_null_comparison
         "recovered": covidTodayRecovered == null ? null : covidTodayRecovered,
+        // ignore: unnecessary_null_comparison
         "todayRecovered": todayRecovered == null ? null : todayRecovered,
+        // ignore: unnecessary_null_comparison
         "active": active == null ? null : active,
+        // ignore: unnecessary_null_comparison
         "critical": critical == null ? null : critical,
+        // ignore: unnecessary_null_comparison
         "casesPerOneMillion": casesPerOneMillion == null ? null : casesPerOneMillion,
+        // ignore: unnecessary_null_comparison
         "deathsPerOneMillion": deathsPerOneMillion == null ? null : deathsPerOneMillion,
+        // ignore: unnecessary_null_comparison
         "tests": tests == null ? null : tests,
+        // ignore: unnecessary_null_comparison
         "testsPerOneMillion": testsPerOneMillion == null ? null : testsPerOneMillion,
+        // ignore: unnecessary_null_comparison
         "population": population == null ? null : population,
+        // ignore: unnecessary_null_comparison
         "continent": continent == null ? null : continent,
+        // ignore: unnecessary_null_comparison
         "oneCasePerPeople": oneCasePerPeople == null ? null : oneCasePerPeople,
+        // ignore: unnecessary_null_comparison
         "oneDeathPerPeople": oneDeathPerPeople == null ? null : oneDeathPerPeople,
+        // ignore: unnecessary_null_comparison
         "oneTestPerPeople": oneTestPerPeople == null ? null : oneTestPerPeople,
+        // ignore: unnecessary_null_comparison
         "activePerOneMillion": activePerOneMillion == null ? null : activePerOneMillion,
+        // ignore: unnecessary_null_comparison
         "recoveredPerOneMillion": recoveredPerOneMillion == null ? null : recoveredPerOneMillion,
+        // ignore: unnecessary_null_comparison
         "criticalPerOneMillion": criticalPerOneMillion == null ? null : criticalPerOneMillion,
+        // ignore: unnecessary_null_comparison
         "Confirmed": confirmed == null ? null : confirmed,
+        // ignore: unnecessary_null_comparison
         "Recovered": recovered == null ? null : recovered,
+        // ignore: unnecessary_null_comparison
         "Hospitalized": hospitalized == null ? null : hospitalized,
+        // ignore: unnecessary_null_comparison
         "Deaths": deaths == null ? null : deaths,
+        // ignore: unnecessary_null_comparison
         "NewConfirmed": newConfirmed == null ? null : newConfirmed,
+        // ignore: unnecessary_null_comparison
         "NewRecovered": newRecovered == null ? null : newRecovered,
+        // ignore: unnecessary_null_comparison
         "NewHospitalized": newHospitalized == null ? null : newHospitalized,
+        // ignore: unnecessary_null_comparison
         "NewDeaths": newDeaths == null ? null : newDeaths,
+        // ignore: unnecessary_null_comparison
         "UpdateDate": updateDate == null ? null : updateDate,
+        // ignore: unnecessary_null_comparison
         "DevBy": devBy == null ? null : devBy,
     };
 }
