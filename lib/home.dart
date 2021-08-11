@@ -219,7 +219,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
   buildlottie() {
     return Container(
-      height: 350,
+      height: 310,
       child: ListView(
         scrollDirection: Axis.horizontal,
         children: [
@@ -228,6 +228,7 @@ class _MyHomePageState extends State<MyHomePage> {
             margin: EdgeInsets.all(5.0),
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(10),
+              color: white,
             ),
             child: Column(
               children: [
@@ -248,6 +249,7 @@ class _MyHomePageState extends State<MyHomePage> {
             margin: EdgeInsets.all(5.0),
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(10),
+              color: white,
             ),
             child: Column(
               children: [
@@ -268,6 +270,7 @@ class _MyHomePageState extends State<MyHomePage> {
             margin: EdgeInsets.all(5.0),
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(10),
+              color: white,
             ),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
@@ -279,7 +282,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 Padding(
                   padding: const EdgeInsets.fromLTRB(10, 0, 10, 0),
                   child: Text(
-                      " อยู่ให้ห่างจากคนที่จาม หรือไอที่ระยะ 1-3 เมตร เพื่อความปลอดภัยสูงสุด จะมีละอองฝอยเล็ก ๆ กระจายออกมาจากจมูกหรือปาก ซึ่งอาจมีไวรัสโคโรน่าหรือไวรัสชนิดอื่น ๆ ตามมาก็ได้", style: kTextheadminStyle),
+                      " อยู่ให้ห่างจากคนที่จาม หรือไอที่ระยะ 1-3 เมตร เพื่อความปลอดภัยสูงสุด ", style: kTextheadminStyle),
                 ),
               ],
             ),
@@ -289,6 +292,7 @@ class _MyHomePageState extends State<MyHomePage> {
             margin: EdgeInsets.all(5.0),
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(10),
+              color: white,
             ),
             child: Column(
               children: [
