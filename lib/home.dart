@@ -1,6 +1,5 @@
 import 'package:covidapi/constants.dart';
 import 'package:covidapi/model/covid_today.dart';
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:http/http.dart' as http;
@@ -24,7 +23,13 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   void initState() {
     super.initState();
-    getData();
+    display();
+  }
+
+  Future display() async {
+    if (mounted) {
+      getData();
+    }
   }
 
   Future<void> getData() async {
@@ -239,7 +244,8 @@ class _MyHomePageState extends State<MyHomePage> {
                 Padding(
                   padding: const EdgeInsets.fromLTRB(10, 0, 10, 0),
                   child: Text(
-                      " ก่อนออกจากบ้าน สวมหน้ากากอนามัยทุกครั้ง ห้ามใส่หน้ากากซ้ำเด็ดขาด", style: kTextheadminStyle),
+                      " ก่อนออกจากบ้าน สวมหน้ากากอนามัยทุกครั้ง ห้ามใส่หน้ากากซ้ำเด็ดขาด",
+                      style: kTextheadminStyle),
                 ),
               ],
             ),
@@ -260,7 +266,8 @@ class _MyHomePageState extends State<MyHomePage> {
                 Padding(
                   padding: const EdgeInsets.fromLTRB(10, 0, 10, 0),
                   child: Text(
-                      " ถูให้สะอาดทุกซอกทุกมุม แนะนำให้ล้างด้วยน้ำสบู่ หรือถ้าเป็นเจลล้างมือที่มีส่วนผสมของแอลกอฮอล์อย่างน้อย 70%", style: kTextheadminStyle),
+                      " ถูให้สะอาดทุกซอกทุกมุม แนะนำให้ล้างด้วยน้ำสบู่ หรือถ้าเป็นเจลล้างมือที่มีส่วนผสมของแอลกอฮอล์อย่างน้อย 70%",
+                      style: kTextheadminStyle),
                 ),
               ],
             ),
@@ -282,7 +289,8 @@ class _MyHomePageState extends State<MyHomePage> {
                 Padding(
                   padding: const EdgeInsets.fromLTRB(10, 0, 10, 0),
                   child: Text(
-                      " อยู่ให้ห่างจากคนที่จาม หรือไอที่ระยะ 1-3 เมตร เพื่อความปลอดภัยสูงสุด ", style: kTextheadminStyle),
+                      " อยู่ให้ห่างจากคนที่จาม หรือไอที่ระยะ 1-3 เมตร เพื่อความปลอดภัยสูงสุด ",
+                      style: kTextheadminStyle),
                 ),
               ],
             ),
@@ -299,11 +307,12 @@ class _MyHomePageState extends State<MyHomePage> {
                 Lottie.network(
                     'https://assets4.lottiefiles.com/packages/lf20_AxmMba.json',
                     width: 160),
-                    Text("อยู่บ้าน", style: kTextheadmaxStyle),
+                Text("อยู่บ้าน", style: kTextheadmaxStyle),
                 Padding(
                   padding: const EdgeInsets.fromLTRB(10, 0, 10, 0),
                   child: Text(
-                      " อยู่บ้าน หยุดเชื่อ เพื่อคนที่คุณรัก เลี่ยงการเดินทางที่ไม่จำเป็น หรือเดินทางไปในพื้นที่เสี่ยง อยู่แต่บ้านจะปลอดภัยที่สุด", style: kTextheadminStyle),
+                      " อยู่บ้าน หยุดเชื่อ เพื่อคนที่คุณรัก เลี่ยงการเดินทางที่ไม่จำเป็น หรือเดินทางไปในพื้นที่เสี่ยง อยู่แต่บ้านจะปลอดภัยที่สุด",
+                      style: kTextheadminStyle),
                 ),
               ],
             ),
